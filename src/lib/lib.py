@@ -179,3 +179,11 @@ exmpl = np.array(([[5, 7, 5, 4, 6, 0, 0, 6],
 
 
 
+def convolve_2d_syn(array_2d, kernel, mode):#работает
+    if (mode == 'horizontal'):
+        array_2d = np.column_stack((np.zeros(array_2d.shape[1]), array_2d))
+        return convolve_2d(array_2d, kernel, 'horizontal')[:,:-1]
+    if (mode == 'vertical'):
+        array_2d = np.row_stack((np.zeros(array_2d.shape[1]), array_2d))
+        return convolve_2d(array_2d, kernel, 'vertical')[:-1,:]
+        
