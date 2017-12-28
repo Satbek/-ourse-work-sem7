@@ -38,7 +38,8 @@ def get_all(func, grad_x, grad_y, x_s, x_e, y_s, y_e, M):
     res['X_F'] = res['grX'][:-1:,:-1:]
     res['Y_F'] = res['grY'][:-1:,:-1:]
     LL = LH = HL = HH = dict()
-    res['LL_0'] = LL[0] = np.array([[np.mean(res['orig']) * (2 ** M)]])
+    LL[0] = np.array([[np.mean(res['orig']) * (2 ** M)]])
+    res['LL_0'] = LL[0][0]
     LH, HL, HH = decomp.analyze(res['grX'],res['grY'], res['grX'], res['grY'])
     LL = decomp.syntesis(LL,LH, HL, HH, M)
     res['LL'] = LL
