@@ -1,0 +1,22 @@
+\begin{thebibliography}{1}
+
+\bibitem{how}
+D.~T.~Gavel L.~A.~Poyneer and J.~M. Brase.
+\newblock Fast wavefront recon- struction in large adaptive optics systems with
+  the fourier transform.
+\newblock {\em J. Opt. Soc. Amer. A}, 2002.
+
+\bibitem{new_method1}
+IEEE Pan Agathoklis Senior Member~IEEE Peter J.~Hampton, Student~Member and
+  Colin Bradley.
+\newblock A new wave-front reconstruction method for adaptive optics systems
+  using wavelets.
+\newblock {\em IEEE JOURNAL OF SELECTED TOPICS IN SIGNAL PROCESSING}, 2008.
+
+\bibitem{new_method2}
+Panajotis~Agathoklis Ioana S.~Sevcenco, Peter J.~Hampton.
+\newblock A wavelet based method for image reconstruction from gradient data
+  with applications.
+\newblock {\em Springer Science+Business Media New York}, 2013.
+
+\end{thebibliography}
