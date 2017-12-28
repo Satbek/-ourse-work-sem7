@@ -1,4 +1,14 @@
-def compare_(func, grad_x, grad_y, x_s, x_e, y_s, y_e, M):
+"""
+Модуль реализует функции используемые при тестировании. Необходим для курсовой работы.
+Модули непосредственно реализующие метод никак от него не зависят.
+"""
+import decomposition as decomp
+import lib.util as ut
+def get_all(func, grad_x, grad_y, x_s, x_e, y_s, y_e, M):
+    """
+        Функция возвращает основную статистику о работе метода.
+        
+    """
     x,y = get_plane(x_s,x_e,y_s,y_e,M)
     res = dict()
     res['orig'] = func(x,y)
