@@ -1,7 +1,7 @@
 """
 В модуле реализованы функции для визуализации результатов работы.
 """
-import test
+import research
 import matplotlib.pyplot as plt
 import lib.gradients as gr
 import lib.mesurements as msrm
@@ -15,7 +15,7 @@ def show_all(func, grad_x, grad_y, x_s, x_e, y_s, y_e, M):
 	Выводит статистику.
 	Возвращает результат функции get_all 
 	"""
-	res = test.get_all(func, grad_x, grad_y, x_s, x_e, y_s, y_e, M)
+	res = research.get_all(func, grad_x, grad_y, x_s, x_e, y_s, y_e, M)
 	f, axarr = plt.subplots(1,2,figsize=(30,30))
 	axarr[0].imshow(res['LL'][res['M']], cmap="gray")
 	axarr[1].imshow(res['orig'], cmap = 'gray')

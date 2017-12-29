@@ -3,8 +3,6 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: course.aux
 The style file: unsrt.bst
 Database file #1: bibl.bib
-Name 1 in "L. A. Poyneer, D. T. Gavel, and J. M. Brase" has a comma at the end for entry how
-while executing---line 944 of file unsrt.bst
 Name 1 in "Peter J. Hampton, Student Member, IEEE, Pan Agathoklis, Senior Member, IEEE, and Colin Bradley" has a comma at the end for entry new_method1
 while executing---line 944 of file unsrt.bst
 Too many commas in name 1 of "Peter J. Hampton, Student Member, IEEE, Pan Agathoklis, Senior Member, IEEE, and Colin Bradley" for entry new_method1
@@ -12,6 +10,8 @@ while executing---line 944 of file unsrt.bst
 Too many commas in name 1 of "Peter J. Hampton, Student Member, IEEE, Pan Agathoklis, Senior Member, IEEE, and Colin Bradley" for entry new_method1
 while executing---line 944 of file unsrt.bst
 Too many commas in name 1 of "Peter J. Hampton, Student Member, IEEE, Pan Agathoklis, Senior Member, IEEE, and Colin Bradley" for entry new_method1
+while executing---line 944 of file unsrt.bst
+Name 1 in "L. A. Poyneer, D. T. Gavel, and J. M. Brase" has a comma at the end for entry how
 while executing---line 944 of file unsrt.bst
 You've used 3 entries,
             1791 wiz_defined-function locations,
