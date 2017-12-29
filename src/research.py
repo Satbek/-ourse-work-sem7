@@ -8,7 +8,7 @@ import lib.data as data
 import lib.mesurements as msrm
 import lib.gradients as gr
 import numpy as np
-def get_all(func, grad_x, grad_y, x_s, x_e, y_s, y_e, M):
+def get_all(func, grad_x, grad_y, x_s, x_e, y_s, y_e, M, LL_0 = 1.0):
     """
         Функция возвращает основную статистику о работе метода.
         func - функция, которую необходимо восстановить
@@ -38,8 +38,8 @@ def get_all(func, grad_x, grad_y, x_s, x_e, y_s, y_e, M):
     res['X_F'] = res['grX'][:-1:,:-1:]
     res['Y_F'] = res['grY'][:-1:,:-1:]
     LL = LH = HL = HH = dict()
-    LL[0] = np.array([[np.mean(res['orig']) * (2 ** M)]])
-    res['LL_0'] = LL[0][0]
+    LL[0] = np.array([[LL_0]])
+    res['LL_0'] = np.array([[np.mean(res['orig']) * (2 ** M)]])
     LH, HL, HH = decomp.analyze(res['grX'],res['grY'], res['grX'], res['grY'])
     LL = decomp.syntesis(LL,LH, HL, HH, M)
     res['LL'] = LL

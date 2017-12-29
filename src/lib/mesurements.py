@@ -7,4 +7,4 @@ def mse(A, B):
 	Средне квадратичное отклонение
 	"""
 	coef = A.shape[0]*A.shape[1]
-	return ((A - B) ** 2).mean()/coef
+	return np.sqrt( (  (A - B) ** 2 ).mean() /coef)
