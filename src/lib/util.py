@@ -14,7 +14,7 @@ def down_sample(array ,sample_factor):
 			array - одномерный или двумерный массив
 			sample_factor - int > 0. определяет какой элемент будет удаляться. Обычно это 2^k, но необязательно. Можно удалить и каждый 3-ий.
 	"""
-	array = np.array(array, dtype=float)
+	array = np.array(array)
 	array = array[::sample_factor]
 	if (len(array.shape) == 2):
 		array = array.transpose()
@@ -33,7 +33,7 @@ def convolve_2d(array_2d, kernel, mode):
 					'verical' - по стобцам, 'horizontal' - по строкам.
 		Свертка производится с дополнениеми нулями справа.
 	"""
-	res = np.array(array_2d, dtype=float)
+	res = np.array(array_2d)
 	kernel = np.array(kernel)
 	if (mode == 'horizontal'):
 		res = conv2d(res, kernel[None, :])
