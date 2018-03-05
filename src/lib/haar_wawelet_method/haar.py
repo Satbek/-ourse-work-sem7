@@ -3,11 +3,9 @@
     вейвлетам Хаара.Основной функцией является analyze. Именно она реализует
     преобразование.
 """
-import pathlib
 import pywt
 import numpy as np
-bindir = pathlib.Path(__file__)
-import bindir.util as ut
+from . import util as ut
 
 
 def _GetLH(m, Y):

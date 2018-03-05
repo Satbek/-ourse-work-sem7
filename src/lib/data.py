@@ -25,8 +25,8 @@ def get_plane(x_s, x_e, y_s, y_e, M):
             y
     """
     dim = 2 ** M * 1j
-    X, Y = np.mgrid[x_s:x_e:dim, y_s:y_e:dim]
-    return Y, X
+    Y, X = np.mgrid[x_s:x_e:dim, y_s:y_e:dim]
+    return X, Y  # нужно исправить
 
 
 def get_Poisson_noise(image, photons):

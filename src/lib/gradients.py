@@ -5,9 +5,7 @@
 Градиент по Y.
 """
 import numpy as np
-import pathlib
-bindir = pathlib.Path(__file__)
-import bindir.util as ut
+from .haar_wawelet_method import util as ut
 
 
 def fried_model_gradient(image):
