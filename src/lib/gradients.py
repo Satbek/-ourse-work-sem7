@@ -1,14 +1,18 @@
 """
-В данном модуле находятся функции реализующие нахождение градиента от двумерного массива.
-Функция приминимает одну матрицу, возвращает две. Градиент по X и Градиент по Y.
+В данном модуле находятся функции реализующие нахождение градиента от
+двумерного массива.
+Функция приминимает одну матрицу, возвращает две. Градиент по X и
+Градиент по Y.
 """
 import numpy as np
-import lib.util as ut
+import pathlib
+bindir = pathlib.Path(__file__)
+import bindir.util as ut
 
 
 def fried_model_gradient(image):
     """
-        Возврщает градиент по геометрии Фрайда, находится с помощью
+        Возврщает градиент по геометрии Фрайда. Hаходится с помощью
         сверток с фильтрами пробразования Хаара.
         Keyword arguments:
             image - исходный массив из которого будут получать градиенты.
@@ -22,11 +26,11 @@ def fried_model_gradient(image):
 
 def Hudgin_gradien_model(image):
     """
-    Возврщает градиент по геометрии Хаджина, находится с помощью
+    Возврщает градиент по геометрии Хаджина. Находится с помощью
     сверток с фильтрами пробразования Хаара.
     Keyword arguments:
         image - исходный массив из которого будут получать градиенты.
     """
-    X = np.sqrt(2) * ut.convolve_2d(image, ut.GetH_h(1),mode='horizontal')
-    Y = np.sqrt(2) * ut.convolve_2d(image, ut.GetH_h(1),mode= 'vertical')
+    X = np.sqrt(2) * ut.convolve_2d(image, ut.GetH_h(1), mode='horizontal')
+    Y = np.sqrt(2) * ut.convolve_2d(image, ut.GetH_h(1), mode='vertical')
     return X, Y
