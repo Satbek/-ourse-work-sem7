@@ -26,5 +26,10 @@ def get_plane(x_s, x_e, y_s, y_e, M):
 	X, Y = np.mgrid[x_s:x_e:dim, y_s:y_e:dim]
 	return Y, X
 
-def get_Poisson_noise(im, lam):
-	pass
+def get_Poisson_noise(image, photons):
+	"""
+		Функция возвращает зашумленную матрицу.
+		image - матрица. (необходимо , чтобы в ней были только положительные аргументы)
+		photons - нормировочный коэффициент
+	"""
+	
