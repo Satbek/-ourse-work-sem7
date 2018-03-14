@@ -36,3 +36,17 @@ def get_Poisson_noise(image, photons):
                             положительные аргументы)
         photons - нормировочный коэффициент
     """
+    original_type = image.dtype
+    step = image.min()
+    noised_image = image.astype(np.float64)
+    if (step < 0):
+        noised_image -= step
+    scale_factor = photons / noised_image.max()
+    noised_image = noised_image * scale_factor
+    noised_image = np.random.poisson(noised_image)
+    noised_image = noised_image / scale_factor
+    if (step < 0):
+        noised_image += step
+    noised_image = noised_image.astype(original_type)
+
+    return noised_image
