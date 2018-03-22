@@ -5,6 +5,8 @@ import functools
 class Experiment(object):
     """
         Базовый класс для всех вычислительных экспериментов.
+        Предполагается, что в наследниках должны переопределяться
+        методы save и execute.
     """
 
     # Директория в которую сохраняются результаты экспериментов
@@ -81,8 +83,9 @@ class Experiment(object):
         path_to_dir = self.__class__.path
         date = str(self.Datetime.timestamp())
         with open(path_to_dir + self.name + ":" + date + ".txt", 'w') as f:
-            f.write("Name:" + self.Description + "\n")
-            f.write("Description:" + self.Report + "\n")
+            f.write("Name:" + self.Name + "\n")
+            f.write("Description:" + self.Description + "\n")
+            f.write("Report:" + self.Report + "\n")
 
     def _execute_decorator(func):
         """

@@ -4,6 +4,7 @@ from .. import data
 from .. import gradients as grad
 from ..haar_wawelet_method import haar
 import os
+import progressbar
 
 
 class WaweletMethodFrequencyCharackteristickExperiment(Experiment):
@@ -24,7 +25,6 @@ class WaweletMethodFrequencyCharackteristickExperiment(Experiment):
         if (noised):
             grad_X = data.get_Poisson_noise(grad_X.real, photons) \
                 + 1j * data.get_Poisson_noise(grad_X.imag, photons)
-
             grad_Y = data.get_Poisson_noise(grad_Y.real, photons) \
                 + 1j * data.get_Poisson_noise(grad_Y.imag, photons)
             X_H = data.get_Poisson_noise(X_H.real, photons) \
@@ -40,18 +40,14 @@ class WaweletMethodFrequencyCharackteristickExperiment(Experiment):
     # todo decorators for noised and for ideal and difference case
     @Experiment._execute_decorator
     def execute(self, noised=False, photons=100):
-        size = 2 ** self.M
+        size = self.KotelmikovLimit
         z = np.zeros(size**2).reshape(size, size)
-        for i in range(size):
-            if (i != self.KotelmikovLimit):
+        with progressbar.ProgressBar(max_value=size**2) as bar:
+            for i in range(size):
                 for j in range(size):
-                    if (j != self.KotelmikovLimit):
-                        z[i, j] = self._get_one_charackteristick(
-                            i, j, noised, photons)
-                    else:
-                        break
-            else:
-                break
+                    z[i, j] = self._get_one_charackteristick(
+                        i, j, noised, photons)
+                    bar.update(i * size + j)
         return z
 
     # todo try, catch
