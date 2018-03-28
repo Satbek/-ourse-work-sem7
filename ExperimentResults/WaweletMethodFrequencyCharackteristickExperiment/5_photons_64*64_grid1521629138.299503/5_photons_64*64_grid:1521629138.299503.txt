@@ -1,0 +1,6 @@
+Name:5_photons_64*64_grid
+Description:fsdfda
+Report:fsd
+Grid degree:6
+Kotelmikov Limit:7
+Date:2018-03-21 13:45:38.299503
