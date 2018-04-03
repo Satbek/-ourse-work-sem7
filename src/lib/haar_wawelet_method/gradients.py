@@ -5,7 +5,7 @@
 Градиент по Y.
 """
 import numpy as np
-from .haar_wawelet_method import util as ut
+from lib.haar_wawelet_method import util as ut
 
 
 def fried_model_gradient(image):

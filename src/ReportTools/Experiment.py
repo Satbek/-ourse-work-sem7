@@ -1,6 +1,6 @@
-from datetime import datetime as datetime
 import functools
-
+from datetime import datetime as datetime
+import os
 
 class Experiment(object):
     """
@@ -10,7 +10,7 @@ class Experiment(object):
     """
 
     # Директория в которую сохраняются результаты экспериментов
-    path = "/home/satbek/Course-work-sem7/ExperimentResults/Experiment/"
+    path = os.path.abspath(os.getcwd() + "../../../ExperimentResults/Experiment/")
 
     def __init__(self, name, reported=True):
         """
@@ -101,8 +101,17 @@ class Experiment(object):
 
     @_execute_decorator
     def execute(self, *args, **kwargs):
-        """Функция выполняет эксперимент"""
+        """
+        Выполняет эксперимент
+        :param args:
+        :param kwargs:
+        :return:
+        """
         pass
 
     def __str__(self):
+        """
+        Строковое представление
+        :return: string
+        """
         return f'Description:\n{self.description}\nDateTime: {self.datetime}'

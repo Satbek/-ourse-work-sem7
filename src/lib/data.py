@@ -29,6 +29,7 @@ def get_plane(x_s, x_e, y_s, y_e, M):
     return X, Y  # нужно исправить
 
 
+
 def get_Poisson_noise(image, photons):
     """
         Функция возвращает зашумленную матрицу.
