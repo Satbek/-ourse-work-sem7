@@ -51,3 +51,7 @@ def get_Poisson_noise(image, photons):
     noised_image = noised_image.astype(original_type)
 
     return noised_image
+
+
+def super_gauss(x, y, a, N):
+    return np.exp(-((x**2 + y**2) / a**2) ** N)
