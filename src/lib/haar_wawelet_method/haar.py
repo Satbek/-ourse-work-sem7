@@ -5,7 +5,7 @@
 """
 import pywt
 import numpy as np
-from . import util as ut
+import lib.haar_wawelet_method.util as ut
 
 
 def _GetLH(m, Y):
