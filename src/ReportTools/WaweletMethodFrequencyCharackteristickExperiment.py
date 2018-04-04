@@ -63,7 +63,7 @@ class WaweletMethodFrequencyCharackteristickExperiment(Experiment):
         """
 
         date = str(self.Datetime.timestamp())
-        # it should be a property
+        #todo it should be a property
         path_to_dir = self.__class__.path + "/" + self.name + date
         print(path_to_dir)
         os.mkdir(path_to_dir)
