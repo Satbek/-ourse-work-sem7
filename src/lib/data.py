@@ -29,7 +29,6 @@ def get_plane(x_s, x_e, y_s, y_e, M):
     return X, Y  # нужно исправить
 
 
-
 def get_Poisson_noise(image, photons):
     """
         Функция возвращает зашумленную матрицу.
@@ -49,9 +48,16 @@ def get_Poisson_noise(image, photons):
     if (step < 0):
         noised_image += step
     noised_image = noised_image.astype(original_type)
-
     return noised_image
 
 
 def super_gauss(x, y, a, N):
+    """
+    Супергаусс на сетке x,y с параметрами a, N
+    :param x: сетка по x
+    :param y: сетка по y
+    :param a: параметр, отвечает за размер области, которую срезает супергаусс
+    :param N: отвечает за "крутизну" супергаусс, чем больше, тем быстрее функция стремится к 0
+    :return: 2d array
+    """
     return np.exp(-((x**2 + y**2) / a**2) ** N)
