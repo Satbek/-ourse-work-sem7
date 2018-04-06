@@ -1,0 +1,6 @@
+Name:256*256grid_with_noise
+Description:256  * 256 grid
+Report:в нуле как то плохо. нужно проверить 
+Grid degree:7
+Kotelmikov Limit:13
+Date:2018-04-04 13:07:14.702897
