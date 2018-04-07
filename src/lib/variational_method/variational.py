@@ -1,6 +1,6 @@
 """
 Вариационный метод восстановления волнового фронта.
-2 параметра регуляризации \alfa, \gamma.
+2 параметра регуляризации alpha, gamma.
 """
 
 import numpy as np
@@ -17,7 +17,7 @@ def _f1(g1, h1):
     """
     dim = g1.shape
     tmp = np.dot(matrixes.create_g1(dim[0], h1), g1)
-    return np.dot(tmp, matrixes.create_b(dim[1]), h1)
+    return np.dot(tmp, matrixes.create_b(dim[1], h1))
 
 
 def _f2(g2, h2):
@@ -44,7 +44,7 @@ def _get_f_matrix(g1, g2, h1, h2):
     return _f1(g1, h1) + _f2(g2, h2)
 
 
-def method(g1, g2, h1, h2, alfa, gamma):
+def method(g1, g2, h1, h2, alpha, gamma):
     """
     Метод. Принимает градиенты по x, y. Параметры регуляризации alga, gamma.
     Возвращает восстановленный волновой фронт.
@@ -52,17 +52,22 @@ def method(g1, g2, h1, h2, alfa, gamma):
     :param g2: 2d array. Градиент по y
     :param h1: Шаг сетки по x
     :param h2: Шаг сетки по y
-    :param alfa: параметр регуляризации
+    :param alpha: параметр регуляризации
     :param gamma: параметр регуляризации
     :return:
     """
     f = np.fft.fft2(_get_f_matrix(g1, g2, h1, h2))
-    lambda_ = eigenvalues.get_lambda(f.shape[0], h1)
-    mu_ = eigenvalues.get_mu(f.shape[1], h2)
+
+    lambda1 = eigenvalues.get_lambda(f.shape[0], h1)
+    lambda2 = eigenvalues.get_lambda(f.shape[1], h2)
+
+    mu1 = eigenvalues.get_mu(f.shape[0], h1)
+    mu2 = eigenvalues.get_mu(f.shape[1], h2)
+
     res = np.zeros(f.shape, dtype=complex)
     for k in range(res.shape[0]):
         for l in range(res.shape[1]):
-            res[k, l] = (lambda_[k] * mu_[l] + mu_[k] * lambda_[l] +
-                         alfa * mu_[k] * mu_[l] + gamma * lambda_[k] * lambda_[l])
+            res[k][l] = (lambda1[k] * mu2[l] + mu1[k] * lambda2[l] +
+                         alpha * mu1[k] * mu2[l] + gamma * lambda1[k] * lambda2[l])
     res = np.fft.ifft2(f / res)
     return np.real(res)
