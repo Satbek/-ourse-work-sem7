@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c47d2807-e062-486a-bd99-d4f8ceb64b12" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Results/Variotional Method.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/src/Results/Variotional Method.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Results/.ipynb_checkpoints/Variational Method frequaency charachteristick-checkpoint.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Results/Variational Method frequaency charachteristick.ipynb" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -18,20 +18,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" selection-start-line="2" selection-end-line="2" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="matrixes.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="matrixes.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/lib/variational_method/matrixes.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="96" selection-start-line="17" selection-start-column="96" selection-end-line="17" selection-end-column="96" />
+            <state relative-caret-position="90">
+              <caret line="7" selection-start-line="7" selection-end-line="18" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -39,11 +30,8 @@
       <file leaf-file-name="variational.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/lib/variational_method/variational.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="885">
-              <caret line="61" column="4" selection-start-line="61" selection-start-column="4" selection-end-line="61" selection-end-column="4" />
-              <folding>
-                <element signature="e#102#120#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="840">
+              <caret line="58" column="50" selection-start-line="58" selection-start-column="50" selection-end-line="58" selection-end-column="50" />
             </state>
           </provider>
         </entry>
@@ -57,11 +45,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Variotional Method.ipynb" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Results/Variotional Method.ipynb">
-          <provider selected="true" editor-type-id="ipnb-editor">
-            <state>
-              <selected id="12" />
+      <file leaf-file-name="data.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/lib/data.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="945">
+              <caret line="63" selection-start-line="63" selection-end-line="63" />
             </state>
           </provider>
         </entry>
@@ -108,9 +96,9 @@
         <option value="$PROJECT_DIR$/src/lib/variational_method/matrixes.py" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/lib/data.py" />
-        <option value="$PROJECT_DIR$/src/lib/variational_method/variational.py" />
         <option value="$PROJECT_DIR$/src/ReportTools/VariationalMethodUsingExperiment.py" />
         <option value="$PROJECT_DIR$/src/Results/Variotional Method.ipynb" />
+        <option value="$PROJECT_DIR$/src/lib/variational_method/variational.py" />
       </list>
     </option>
   </component>
@@ -387,6 +375,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="64" y="-11" width="1303" height="780" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49921995" visible="true" weight="0.34976527" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32917318" />
@@ -438,9 +427,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="915">
           <caret line="61" column="4" selection-start-line="61" selection-start-column="4" selection-end-line="61" selection-end-column="4" />
-          <folding>
-            <element signature="e#102#120#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -490,9 +476,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="915">
           <caret line="61" column="4" selection-start-line="61" selection-start-column="4" selection-end-line="61" selection-end-column="4" />
-          <folding>
-            <element signature="e#102#120#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -661,13 +644,6 @@
         <state relative-caret-position="-644" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Results/compare_ideal.ipynb">
-      <provider selected="true" editor-type-id="ipnb-editor">
-        <state>
-          <selected id="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/lib/mesurements.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
@@ -689,41 +665,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/lib/data.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="496">
-          <caret line="63" lean-forward="true" selection-start-line="63" selection-end-line="63" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/lib/variational_method/matrixes.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="96" selection-start-line="17" selection-start-column="96" selection-end-line="17" selection-end-column="96" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/lib/variational_method/eigenvalues.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/lib/variational_method/variational.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="885">
-          <caret line="61" column="4" selection-start-line="61" selection-start-column="4" selection-end-line="61" selection-end-column="4" />
-          <folding>
-            <element signature="e#102#120#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -738,6 +683,48 @@
       <provider selected="true" editor-type-id="ipnb-editor">
         <state>
           <selected id="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lib/variational_method/eigenvalues.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lib/data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="945">
+          <caret line="63" selection-start-line="63" selection-end-line="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharmCE2018.1/system/python_stubs/-1711523596/numpy/core/multiarray.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-35300">
+          <caret line="996" selection-start-line="996" selection-end-line="996" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Results/compare_ideal.ipynb">
+      <provider selected="true" editor-type-id="ipnb-editor">
+        <state>
+          <selected id="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lib/variational_method/variational.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="840">
+          <caret line="58" column="50" selection-start-line="58" selection-start-column="50" selection-end-line="58" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lib/variational_method/matrixes.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="7" selection-start-line="7" selection-end-line="18" selection-end-column="33" />
         </state>
       </provider>
     </entry>
