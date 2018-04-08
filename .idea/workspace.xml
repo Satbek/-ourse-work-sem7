@@ -2,20 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c47d2807-e062-486a-bd99-d4f8ceb64b12" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/Results/.ipynb_checkpoints/Frequency charachteristik-checkpoint.ipynb" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/Results/.ipynb_checkpoints/Polynoms-checkpoint.ipynb" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/Results/.ipynb_checkpoints/RectagleVariational-checkpoint.ipynb" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/Results/.ipynb_checkpoints/Variational Method Using-checkpoint.ipynb" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/Results/.ipynb_checkpoints/Variotional Method-checkpoint.ipynb" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/Results/.ipynb_checkpoints/compare_ideal-checkpoint.ipynb" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/Results/.ipynb_checkpoints/incorrect step-checkpoint.ipynb" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/Results/Frequency charachteristik.ipynb" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/Results/Polynoms.ipynb" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/Results/RectagleVariational.ipynb" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/Results/Variational Method Using.ipynb" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/Results/Variotional Method.ipynb" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/Results/compare_ideal.ipynb" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/Results/incorrect step.ipynb" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/src/Results/Variational/.ipynb_checkpoints/without additional divide h-checkpoint.ipynb" afterPath="$PROJECT_DIR$/src/Results/Variational/.ipynb_checkpoints/without additional divide h-checkpoint.ipynb" />
+      <change beforePath="$PROJECT_DIR$/src/Results/Variational/Variational Method Using.ipynb" afterPath="$PROJECT_DIR$/src/Results/Variational/Variational Method Using.ipynb" />
+      <change beforePath="$PROJECT_DIR$/src/Results/Variational/without additional divide h.ipynb" afterPath="$PROJECT_DIR$/src/Results/Variational/without additional divide h.ipynb" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -32,28 +22,18 @@
       <file leaf-file-name="matrixes.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/lib/variational_method/matrixes.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="810">
+            <state relative-caret-position="0">
               <caret line="45" column="39" lean-forward="false" selection-start-line="45" selection-start-column="39" selection-end-line="45" selection-end-column="39" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="variational.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="variational.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/lib/variational_method/variational.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1116">
+            <state relative-caret-position="269">
               <caret line="64" column="21" lean-forward="false" selection-start-line="64" selection-start-column="21" selection-end-line="64" selection-end-column="21" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="36">
-              <caret line="2" column="5" lean-forward="false" selection-start-line="2" selection-start-column="5" selection-end-line="2" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -62,7 +42,7 @@
       <file leaf-file-name="haar.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/lib/haar_wawelet_method/haar.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1980">
+            <state relative-caret-position="1944">
               <caret line="110" column="53" lean-forward="false" selection-start-line="110" selection-start-column="53" selection-end-line="110" selection-end-column="53" />
               <folding />
             </state>
@@ -154,6 +134,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -227,7 +208,6 @@
         </subPane>
       </pane>
       <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -414,14 +394,15 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="-4" width="1366" height="741" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34919474" sideWeight="0.49921995" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20640835" sideWeight="0.49333334" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32917318" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32917318" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32917318" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32917318" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25039124" sideWeight="0.50078005" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35543963" sideWeight="0.50666666" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32917318" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25039124" sideWeight="0.50078005" order="2" side_tool="true" content_ui="tabs" />
@@ -483,13 +464,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Results/Variotional Method.ipynb">
-      <provider selected="true" editor-type-id="ipnb-editor">
-        <state>
-          <selected id="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Results/Variotional Method.ipynb" />
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -555,13 +530,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Results/Polynoms.ipynb">
-      <provider selected="true" editor-type-id="ipnb-editor">
-        <state>
-          <selected id="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Results/Polynoms.ipynb" />
     <entry file="file://$PROJECT_DIR$/src/lib/haar_wawelet_method/gradients.py" />
     <entry file="file://$PROJECT_DIR$/ExperimentResults/Experiment/fdsfds:1521624723.023227.txt" />
     <entry file="file://$PROJECT_DIR$/src/lib/data.py">
@@ -606,20 +575,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/lib/ReportTools/Untitled.ipynb" />
     <entry file="file://$PROJECT_DIR$/src/Frequency charachteristik.ipynb" />
-    <entry file="file://$PROJECT_DIR$/src/Results/Frequency charachteristik.ipynb">
-      <provider selected="true" editor-type-id="ipnb-editor">
-        <state>
-          <selected id="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Results/Polynoms.ipynb">
-      <provider selected="true" editor-type-id="ipnb-editor">
-        <state>
-          <selected id="5" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Results/Frequency charachteristik.ipynb" />
+    <entry file="file://$PROJECT_DIR$/src/Results/Polynoms.ipynb" />
     <entry file="file://$PROJECT_DIR$/ExperimentResults/WaweletMethodFrequencyCharackteristickExperiment/5_photons_64*64_grid1521629138.299503/5_photons_64*64_gridResult.txt" />
     <entry file="file://$PROJECT_DIR$/ExperimentResults/WaweletMethodFrequencyCharackteristickExperiment/256*256grid_with_noise1522782926.328798/256*256grid_with_noiseResult.txt" />
     <entry file="file://$PROJECT_DIR$/ExperimentResults/WaweletMethodFrequencyCharackteristickExperiment/256*256grid_with_noise1522783781.380892/256*256grid_with_noise:1522783781.380892.txt" />
@@ -654,19 +611,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/lib/haar_wawelet_method/haar.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1980">
+        <state relative-caret-position="1944">
           <caret line="110" column="53" lean-forward="false" selection-start-line="110" selection-start-column="53" selection-end-line="110" selection-end-column="53" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Results/Variotional Method.ipynb">
-      <provider selected="true" editor-type-id="ipnb-editor">
-        <state>
-          <selected id="12" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Results/Variotional Method.ipynb" />
     <entry file="file://$PROJECT_DIR$/src/lib/variational_method/eigenvalues.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -686,25 +637,11 @@
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/.PyCharmCE2018.1/system/python_stubs/-1711523596/numpy/core/multiarray.py" />
-    <entry file="file://$PROJECT_DIR$/src/Results/compare_ideal.ipynb">
-      <provider selected="true" editor-type-id="ipnb-editor">
-        <state>
-          <selected id="7" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Results/compare_ideal.ipynb" />
     <entry file="file://$PROJECT_DIR$/src/lib/variational_method/matrixes.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="810">
+        <state relative-caret-position="0">
           <caret line="45" column="39" lean-forward="false" selection-start-line="45" selection-start-column="39" selection-end-line="45" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/lib/variational_method/variational.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1116">
-          <caret line="64" column="21" lean-forward="false" selection-start-line="64" selection-start-column="21" selection-end-line="64" selection-end-column="21" />
           <folding />
         </state>
       </provider>
@@ -712,7 +649,15 @@
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="36">
-          <caret line="2" column="5" lean-forward="false" selection-start-line="2" selection-start-column="5" selection-end-line="2" selection-end-column="5" />
+          <caret line="2" column="5" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lib/variational_method/variational.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="269">
+          <caret line="64" column="21" lean-forward="false" selection-start-line="64" selection-start-column="21" selection-end-line="64" selection-end-column="21" />
           <folding />
         </state>
       </provider>
