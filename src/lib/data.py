@@ -61,3 +61,14 @@ def super_gauss(x, y, a, N):
     :return: 2d array
     """
     return np.exp(-((x**2 + y**2) / a**2) ** N)
+
+
+def normalize(front):
+    """
+    Нормирует исходный волновой фронт на квадрат [-1, 1] x [-1, 1]
+    :param front: волновой фронт
+    :return: отнормированный волновой фронт
+    """
+    front -= front.min()
+    front /= front.max()
+    return front
