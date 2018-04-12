@@ -8,22 +8,24 @@ import lib.variational_method.eigenvalues as eigenvalues
 import lib.variational_method.matrixes as matrixes
 
 
-def _f1(g1, h1):
+def _f1(g1, h1, h2):
     """
     F1 составлющая матрицы F
     :param g1: 2d array. Градиент по x
     :param h1: шаг сетки по x
+    :param h2: шаг сетки по y
     :return: 2d array
     """
     dim = g1.shape
     tmp = np.dot(matrixes.create_g1(dim[0], h1), g1)
-    return np.dot(tmp, matrixes.create_b(dim[1], h1))
+    return np.dot(tmp, matrixes.create_b(dim[1], h2))
 
 
-def _f2(g2, h2):
+def _f2(g2, h1, h2):
     """
     F2 составляющая матрицы F
     :param g2: 2d array. Градиент по y
+    :param h1: шаг сетки по x
     :param h2: шаг сетки по y
     :return: 2d array
     """
@@ -41,7 +43,7 @@ def _get_f_matrix(g1, g2, h1, h2):
     :param h2: Шаг сетки по y
     :return: 2d array
     """
-    return _f1(g1, h1) + _f2(g2, h2)
+    return _f1(g1, h1, h2) + _f2(g2, h1, h2)
 
 
 def method(g1, g2, h1, h2, alpha, gamma):
