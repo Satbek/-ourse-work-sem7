@@ -30,7 +30,7 @@ def _f2(g2, h1, h2):
     :return: 2d array
     """
     dim = g2.shape
-    tmp = np.dot(matrixes.create_b(dim[0], h2), g2)
+    tmp = np.dot(matrixes.create_b(dim[0], h1), g2)
     return np.dot(tmp, matrixes.create_g2(dim[1], h2))
 
 
