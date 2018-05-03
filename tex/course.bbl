@@ -15,10 +15,25 @@ Panajotis~Agathoklis Ioana S.~Sevcenco, Peter J.~Hampton.
 \newblock {\em Springer Science+Business Media New York}, pages 717--737, 9
   2013.
 
+\bibitem{vatiational_base}
+А. С. Гончаров А. В.~Ларичев А. В.~Разгулин, Е.
+  Ж.~Кужамалиев.
+\newblock Вариационный метод восстановления
+  волнового фронта по измерениям датчика
+  Шака-Гартмана.
+\newblock {\em Оптика атмосферы и океана}, 30:104,108,
+  2017.
+
 \bibitem{how}
 D.~T.~Gavel L.~A.~Poyneer and J.~M. Brase.
 \newblock Fast wavefront recon- struction in large adaptive optics systems with
   the fourier transform.
 \newblock {\em J. Opt. Soc. Amer. A}, 2002.
+
+\bibitem{marchuck}
+Агошков~В.И. Марчук Г.~И.
+\newblock {\em Введение в проекционно-сеточные
+  методы.}
+\newblock М.: Наука, 1981.
 
 \end{thebibliography}

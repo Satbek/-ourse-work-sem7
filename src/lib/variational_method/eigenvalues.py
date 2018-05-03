@@ -19,4 +19,4 @@ def get_mu(n, h):
     :param h: шаг сектки(дискретизации)
     :return: np.array([])
     """
-    return 1 - h ** 2 / 6 * get_lambda(n, h)
+    return 1 - h ** 2 * get_lambda(n, h) / 6

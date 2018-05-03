@@ -59,17 +59,17 @@ def method(g1, g2, h1, h2, alpha, gamma):
     :return:
     """
     f = np.fft.fft2(_get_f_matrix(g1, g2, h1, h2))
-
     lambda1 = eigenvalues.get_lambda(f.shape[0], h1)
     lambda2 = eigenvalues.get_lambda(f.shape[1], h2)
 
     mu1 = eigenvalues.get_mu(f.shape[0], h1)
     mu2 = eigenvalues.get_mu(f.shape[1], h2)
 
-    res = np.zeros(f.shape, dtype=complex)
+    res = f
     for k in range(res.shape[0]):
         for l in range(res.shape[1]):
-            res[k][l] = (lambda1[k] * mu2[l] + mu1[k] * lambda2[l] +
-                         alpha * mu1[k] * mu2[l] + gamma * lambda1[k] * lambda2[l])
-    res = np.fft.ifft2(f / res)
+            t = (lambda1[k] * mu2[l] + mu1[k] * lambda2[l] +
+                    alpha * mu1[k] * mu2[l] + gamma * lambda1[k] * lambda2[l])
+            res[k,l] = f[k,l] / t
+    res = np.fft.ifft2(res)
     return np.real(res)
