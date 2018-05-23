@@ -1,0 +1,197 @@
+\documentclass[11pt]{beamer}
+\usetheme{Warsaw}
+\usepackage[utf8]{inputenc}
+\usepackage[russian]{babel}
+\usepackage[T2A]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\author{Журавская Александра Валерьевна}
+\title{Геометрический поиск симметричных объектов}
+\subtitle{на цифровом изображении}
+%\setbeamercovered{transparent} 
+%\setbeamertemplate{navigation symbols}{} 
+%\logo{} 
+\institute{Московский Государственный Университет имени М.В.Ломоносова \\
+Факультет вычислительной математики и кибернетики \\
+Кафедра математических методов прогнозирования \\
+\vspace{\baselineskip}
+Выпускная квалификационная работа бакалавра \\
+\vspace{\baselineskip}
+Научный руководитель: д.т.н., профессор Местецкий Л.М.} 
+\date{3 мая 2018г.} 
+
+
+\setbeamertemplate{navigation symbols}{}
+
+\begin{document}
+
+\begin{frame}
+\titlepage
+\end{frame}
+
+\begin{frame}
+\frametitle{Симметрия в цифровых изображениях}
+\begin{columns}
+\begin{column}{0.5\textwidth}
+\center{\includegraphics[width=\linewidth]{sixth}}
+\end{column}
+\begin{column}{0.5\textwidth}
+Симметрия играет важную роль для генерации признаков и классификации формы объектов в задачах распознавания формы изображений. \\
+\vspace{\baselineskip}
+Актуальная задача - оценка степени осевой симметрии для объектов на цифровых изображениях.
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}
+\frametitle{Постановка задачи}
+\framesubtitle{Исходные данные и контурное описание}
+Входные данные: бинарные изображения, содержащие силуэт объекта. \\
+Найти: симметричные объекты, определить оси симметрии и оценить степень симметричности объектов. \\
+\vspace{\baselineskip}
+Цель исследования: оценить возможности использования Фурье-дескрипторов для решения задачи.
+\begin{figure}[H]
+\begin{minipage}[h]{0.3\linewidth}
+\center{\includegraphics[width=\linewidth]{third} \\ 1. Силуэт объекта}\end{minipage}
+\hfill
+\begin{minipage}[h]{0.3\linewidth}
+\center{\includegraphics[width=\linewidth]{fourth} \\2. Контур объекта}\end{minipage}
+\hfill
+\begin{minipage}[h]{0.3\linewidth}
+\center{\includegraphics[width=\linewidth]{fifth} \\ 3. Ось симметрии контура}
+\end{minipage}
+\end{figure}
+\end{frame}
+
+\begin{frame}
+\frametitle{Фурье-дескриптор для цифровой кривой}
+Представим контур фигуры как последовательность точек в комплексной плоскости: $U = \lbrace u_l \rbrace_{l=0}^{N-1}$.\\
+Выполним для $U$ дискретное преобразование Фурье: получим последовательность коэффициентов $F = \lbrace f_l \rbrace _{l=0}^{N-1}$~-- дескриптор Фурье фигуры, описанной контуром $U$. \\
+\begin{figure}[H]
+\begin{minipage}[h]{0.45\linewidth}
+\center{\includegraphics[width=\linewidth]{sigma_contour} \\ 1. Контур объекта: последовательность точек на комплексной плоскости}
+\end{minipage}
+\hfill
+\begin{minipage}[h]{0.45\linewidth}
+\center{\includegraphics[width=\linewidth]{sigma_f} \\ 2. Дескрипторы Фурье при правильном выборе начальной точки контура }
+\end{minipage}
+\end{figure}
+\end{frame}
+
+\begin{frame}
+\frametitle{Критерий осевой симметрии}
+\begin{columns}
+\begin{column}{0.5\textwidth}
+Контур $U$ будем называть \textbf{\textit{идеальным}}, если выполнены условия: $Im(u_0) = 0$, $u_l = u_{N-l}^*$, $l = 1..N-1.$
+\end{column}
+\begin{column}{0.5\textwidth}
+\center{\includegraphics[width = \linewidth]{u_sym}}
+\end{column}
+\end{columns}
+\begin{block}{Утверждение (необходимое условие идеального контура)}
+Пусть $U = \{u_l\}_{l=0}^{N-1}$~-- идеальный контур. \\
+Тогда для дескриптора Фурье $F = \{ f_l \}_{l=0}^{N-1}$ контура $U$ равенство $Im(f_l)=0$ выполнено для всех $l = 0..N-1.$
+\end{block}
+\end{frame}
+
+\begin{frame}
+\frametitle{Метод решения задачи}
+\framesubtitle{Свойства Фурье-дескриптора}
+\begin{tabular}[c]{| p{0.25\linewidth} | l | l |}
+\hline
+Преобразование &  Точки контура  & Дескрипторы Фурье\\
+&$u'_l$, $l = \overline{0,N-1}$&   $f'_l$, $l = \overline{0,N-1}$ \\\hline
+Сдвиг на вектор $\Delta u$ & $ u_l+\Delta u$ &\begin{tabular}{lr}
+$f_l +\Delta u,$ & $l = 0$\\
+$f_l$, & $l \neq 0$
+\end{tabular} 
+\\\hline
+Поворот вокруг $(0,0)$ на угол $\alpha$ & $u_l \cdot exp(i\alpha)$ & $f_l \cdot exp(i\alpha)$ \\\hline
+Сдвиг начала обхода контура  & $u_{(l+p)mod N}$ & $f_l \cdot  exp(i \cdot \frac{2\pi}{N} \cdot l \cdot p)$ \\\hline
+\end{tabular}
+\vspace{\baselineskip} \\
+Идея метода: найти такое преобразование исходного контура, при котором результат будет наиболее близок к идеальному. \\Критерий: чем меньше $\sum_{l=0}^{N-1} (Im\, f'_l)^2$, тем больше контур похож на идеальный.
+\end{frame}
+
+\begin{frame}
+\frametitle{Обобщенный критерий осевой симметрии}
+\begin{figure}[H]
+\begin{minipage}[h]{0.45\linewidth}
+\center{\includegraphics[width=\linewidth]{rotate_contour} \\ 1. Контур объекта}
+\end{minipage}
+\hfill
+\begin{minipage}[h]{0.45\linewidth}
+\center{\includegraphics[width=\linewidth]{rotate_f} \\ 2. Дескрипторы Фурье, $l>0$}
+\end{minipage}
+\end{figure}
+\begin{block}{Необходимое условие симметрии}
+Пусть контур $U = \{u_l\}_{l=0}^{N-1}$ является симметричным: существует точка контура $u_p$, лежащая на оси симметрии, угол наклона которой равен $\alpha$. $F = \{f_l\}_{l=0}^{N-1}$~-- дескриптор Фурье контура $U$. Тогда равенство $Im(f_l \cdot exp(i \cdot \frac{2\pi}{N} \cdot l \cdot (N-p)) \cdot exp(-i\alpha)) = 0$ выполнено для всех $l=1..N-1$. \end{block}
+\end{frame}
+
+\begin{frame}
+\frametitle{Метод решения задачи}
+\framesubtitle{Поиск параметров оси симметрии и мера симметричности}
+Mера симметричности контура относительно прямой, проходящей через вершину $u_p$, и имеющую угол наклона $\alpha$?
+$$t(\alpha,p) = \sum_{l=1}^{N-1} Im(f_l \cdot exp(i \cdot \frac{2\pi}{N} \cdot l \cdot (N-p)) \cdot exp(-i\alpha))^2 \geq 0$$ 
+\begin{block}{Утверждение}
+Если $\alpha$~-- угол наклона оси симметрии, проходящей через точку $u_p$, то $t(\alpha,p) \approx 0$. 
+\end{block}
+$$\alpha(p) = \underset{\alpha \in [0,\pi)}{\mathrm{argmin}}\, t(\alpha,p),\, p=0..N-1$$
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Метод решения задачи}
+\framesubtitle{Поиск параметров оси симметрии и мера симметричности}
+Мера симметричности контура относительно прямой, проходящей через вершину $u_p$, и имеющую угол наклона $\alpha(p)$? 
+$$Q(p) = \sqrt{\frac{t(\alpha(p),p)}{N-1}} \geq 0$$
+\begin{block}{Утверждение}
+Если ось симметрии проходит через вершину $u_p$, то $Q(p)\approx0$.
+\end{block}
+$$P = \underset{p = 0..N-1}{\mathrm{argmin}}\,Q(p), \;\;\;\;\; Q(P) = Q$$
+\begin{block}{Утверждение}
+Если контур $U$ имеет ось симметрии, то $Q \approx 0$.
+\end{block}
+\end{frame}
+
+\begin{frame}{Алгоритм}
+\begin{columns}
+\begin{column}{0.8\textwidth}
+\begin{enumerate}
+\item Построить цифровой контур бинарного объекта  (8-смежная последовательность 4-граничных точек); 
+\item Построить Фурье-дескриптор на основе быстрого преобразования Фурье; 
+\item Направленным перебором по точкам контура найти наилучшее значение критерия симметрии.
+\end{enumerate}
+\end{column}
+\begin{column}{0.15\textwidth}
+\vspace{3\baselineskip}\\
+$O(N)$
+\vspace{2\baselineskip}\\
+$O(N\log{}N)$
+\vspace{\baselineskip}\\
+$O(N^2)$
+\vspace{3\baselineskip}
+\end{column}
+\end{columns}
+В планах дальнейшего исследования увеличение вычислительной эффективности шага (3) до $O(N)$.
+\end{frame}
+
+\begin{frame}
+\frametitle{Вычислительные эксперименты}
+\includegraphics[width=\linewidth]{full}
+\end{frame}
+
+
+\begin{frame}{Положения, выносимые на защиту}
+\begin{enumerate}
+\item Разработан метод оценки симметричности объектов на цифровом изображении, основанный на использовании Фурье-дескрипторов;
+\item Доказана корректность данного метода;
+\item Разработан эффективный алгоритм определения оси симметрии дискретного бинарного силуэта; 
+\item Проведены вычислительные эксперименты, подтверждающие работоспособность, эффективность и практическую полезность данного алгоритма.
+\end{enumerate}
+\end{frame}
+
+\end{document}
+

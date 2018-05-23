@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.10.24)  3 MAY 2018 01:47
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.10.24)  10 MAY 2018 15:34
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -273,7 +273,11 @@ Package: mathrsfs 1996/01/01 Math RSFS package v1.0 (jk)
 LaTeX Font Info:    Try loading font information for T2A+cmr on input line 4.
 (/usr/share/texlive/texmf-dist/tex/latex/cyrillic/t2acmr.fd
 File: t2acmr.fd 2001/08/11 v1.0a Computer Modern Cyrillic font definitions
-))
+)
+
+LaTeX Warning: Label `g_1' multiply defined.
+
+)
 \openout1 = `course.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 45.
@@ -290,8 +294,7 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 45.
 LaTeX Font Info:    ... okay on input line 45.
 LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 45.
 LaTeX Font Info:    ... okay on input line 45.
-
-(/usr/share/texlive/texmf-dist/tex/latex/ucs/ucsencs.def
+ (/usr/share/texlive/texmf-dist/tex/latex/ucs/ucsencs.def
 File: ucsencs.def 2011/01/21 Fixes to fontencodings LGR, T3
 )
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
@@ -385,235 +388,259 @@ File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 \tf@toc=\write3
 \openout3 = `course.toc'.
 
- [1] [2] [3]
-[4] <analyze.pdf, id=39, 313.17pt x 355.3275pt>
+ [1]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 113.
+
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 113.
+ [2] [3] [4]
+<analyze.pdf, id=39, 313.17pt x 355.3275pt>
 File: analyze.pdf Graphic file (type pdf)
  <use analyze.pdf>
-Package pdftex.def Info: analyze.pdf used on input line 206.
+Package pdftex.def Info: analyze.pdf used on input line 202.
 (pdftex.def)             Requested size: 205.1128pt x 232.73306pt.
 
 <synthesis.pdf, id=40, 362.35374pt x 436.63126pt>
 File: synthesis.pdf Graphic file (type pdf)
  <use synthesis.pdf>
-Package pdftex.def Info: synthesis.pdf used on input line 207.
+Package pdftex.def Info: synthesis.pdf used on input line 203.
 (pdftex.def)             Requested size: 205.1128pt x 247.16348pt.
- [5 <./analyze.pdf>] [6 <./synthesis.pdf>]
-<hwaf_decomp.png, id=71, 484.81125pt x 452.69125pt>
+ [5 <./analyze.pdf> <./synthesis.pdf
+
+pdfTeX warning: pdflatex (file ./synthesis.pdf): PDF inclusion: multiple pdfs w
+ith page group included in a single page
+>] <hwaf_decomp.png, id=65, 484.81125pt x 452.69125pt>
 File: hwaf_decomp.png Graphic file (type png)
  <use hwaf_decomp.png>
-Package pdftex.def Info: hwaf_decomp.png used on input line 238.
+Package pdftex.def Info: hwaf_decomp.png used on input line 234.
 (pdftex.def)             Requested size: 307.677pt x 287.30377pt.
 
-[7 <./hwaf_decomp.png>]
+[6] [7 <./hwaf_decomp.png>]
 File: hwaf_decomp.png Graphic file (type png)
  <use hwaf_decomp.png>
-Package pdftex.def Info: hwaf_decomp.png used on input line 296.
+Package pdftex.def Info: hwaf_decomp.png used on input line 291.
 (pdftex.def)             Requested size: 307.677pt x 287.30377pt.
- [8] [9] [10]
-<pictures/haar/Z_3^{-1}.png, id=85, 1084.05pt x 361.35pt>
+ [8] [9]
+<pictures/haar/Z_3^{-1}.png, id=81, 1084.05pt x 361.35pt>
 File: pictures/haar/Z_3^{-1}.png Graphic file (type png)
 
 <use pictures/haar/Z_3^{-1}.png>
-Package pdftex.def Info: pictures/haar/Z_3^{-1}.png used on input line 391.
+Package pdftex.def Info: pictures/haar/Z_3^{-1}.png used on input line 365.
 (pdftex.def)             Requested size: 512.78981pt x 170.93727pt.
-
-<pictures/haar/Z_3^3.png, id=86, 1084.05pt x 361.35pt>
+ [10]
+<pictures/haar/Z_3^3.png, id=85, 1084.05pt x 361.35pt>
 File: pictures/haar/Z_3^3.png Graphic file (type png)
 
 <use pictures/haar/Z_3^3.png>
-Package pdftex.def Info: pictures/haar/Z_3^3.png used on input line 396.
+Package pdftex.def Info: pictures/haar/Z_3^3.png used on input line 370.
 (pdftex.def)             Requested size: 512.78981pt x 170.93727pt.
 
-<pictures/haar/Z_2^-2.png, id=87, 1084.05pt x 361.35pt>
+<pictures/haar/Z_2^-2.png, id=86, 1084.05pt x 361.35pt>
 File: pictures/haar/Z_2^-2.png Graphic file (type png)
 
 <use pictures/haar/Z_2^-2.png>
-Package pdftex.def Info: pictures/haar/Z_2^-2.png used on input line 401.
+Package pdftex.def Info: pictures/haar/Z_2^-2.png used on input line 375.
 (pdftex.def)             Requested size: 512.78981pt x 170.93727pt.
  [11 <./pictures/haar/Z_3^{-1}.png> <./pictures/haar/Z_3^3.png>]
-<pictures/haar/R_2^2_variant1.png, id=93, 1084.05pt x 361.35pt>
+<pictures/haar/R_2^2_variant1.png, id=92, 1084.05pt x 361.35pt>
 File: pictures/haar/R_2^2_variant1.png Graphic file (type png)
 
 <use pictures/haar/R_2^2_variant1.png>
-Package pdftex.def Info: pictures/haar/R_2^2_variant1.png used on input line 42
-3.
+Package pdftex.def Info: pictures/haar/R_2^2_variant1.png used on input line 39
+7.
 (pdftex.def)             Requested size: 512.78981pt x 170.93727pt.
  [12 <./pictures/haar/Z_2^-2.png>]
-<pictures/haar/R_3^3_variant1.png, id=100, 1084.05pt x 361.35pt>
+<pictures/haar/R_3^3_variant1.png, id=99, 1084.05pt x 361.35pt>
 File: pictures/haar/R_3^3_variant1.png Graphic file (type png)
 
 <use pictures/haar/R_3^3_variant1.png>
-Package pdftex.def Info: pictures/haar/R_3^3_variant1.png used on input line 42
-8.
+Package pdftex.def Info: pictures/haar/R_3^3_variant1.png used on input line 40
+2.
 (pdftex.def)             Requested size: 512.78981pt x 170.93727pt.
 
-<pictures/haar/R_3^1_variant1.png, id=101, 1084.05pt x 361.35pt>
+<pictures/haar/R_3^1_variant1.png, id=100, 1084.05pt x 361.35pt>
 File: pictures/haar/R_3^1_variant1.png Graphic file (type png)
 
 <use pictures/haar/R_3^1_variant1.png>
-Package pdftex.def Info: pictures/haar/R_3^1_variant1.png used on input line 43
-3.
+Package pdftex.def Info: pictures/haar/R_3^1_variant1.png used on input line 40
+7.
 (pdftex.def)             Requested size: 512.78981pt x 170.93727pt.
  [13 <./pictures/haar/R_2^2_variant1.png> <./pictures/haar/R_3^3_variant1.png> 
 <./pictures/haar/R_3^1_variant1.png>]
-<pictures/haar/variant2/R_2^2.png, id=108, 1084.05pt x 361.35pt>
+<pictures/haar/variant2/R_2^2.png, id=107, 1084.05pt x 361.35pt>
 File: pictures/haar/variant2/R_2^2.png Graphic file (type png)
 
 <use pictures/haar/variant2/R_2^2.png>
-Package pdftex.def Info: pictures/haar/variant2/R_2^2.png used on input line 44
-3.
+Package pdftex.def Info: pictures/haar/variant2/R_2^2.png used on input line 41
+6.
 (pdftex.def)             Requested size: 512.78981pt x 170.93727pt.
 
-<pictures/haar/variant2/R_3^3.png, id=109, 1084.05pt x 361.35pt>
+<pictures/haar/variant2/R_3^3.png, id=108, 1084.05pt x 361.35pt>
 File: pictures/haar/variant2/R_3^3.png Graphic file (type png)
 
 <use pictures/haar/variant2/R_3^3.png>
-Package pdftex.def Info: pictures/haar/variant2/R_3^3.png used on input line 44
-8.
+Package pdftex.def Info: pictures/haar/variant2/R_3^3.png used on input line 42
+1.
 (pdftex.def)             Requested size: 512.78981pt x 170.93727pt.
 
-<pictures/haar/variant2/R_3^1.png, id=110, 1084.05pt x 361.35pt>
+<pictures/haar/variant2/R_3^1.png, id=109, 1084.05pt x 361.35pt>
 File: pictures/haar/variant2/R_3^1.png Graphic file (type png)
 
 <use pictures/haar/variant2/R_3^1.png>
-Package pdftex.def Info: pictures/haar/variant2/R_3^1.png used on input line 45
-3.
+Package pdftex.def Info: pictures/haar/variant2/R_3^1.png used on input line 42
+6.
 (pdftex.def)             Requested size: 512.78981pt x 170.93727pt.
  [14 <./pictures/haar/variant2/R_2^2.png> <./pictures/haar/variant2/R_3^3.png>]
- [15 <./pictures/haar/variant2/R_3^1.png>]
-Overfull \hbox (5.52002pt too wide) in paragraph at lines 463--465
+
+Overfull \hbox (5.52002pt too wide) in paragraph at lines 436--438
 \T2A/cmr/m/n/12 ‘ункци€ $\OML/cmm/m/it/12 u$ \T2A/cmr/m/n/12 при-над-ле-жит со-
 бо-лев-ско-му про-стран-ству $\OML/cmm/m/it/12 W[]\OT1/cmr/m/n/12 (
 )$\T2A/cmr/m/n/12 , про-стран-ству пе-ри-о-ди-че-ских функ-
  []
 
-[16] [17] [18] [19] [20]
-<pictures/variational/freq_char/3dcont.png, id=137, 578.16pt x 578.16pt>
+[15 <./pictures/haar/variant2/R_3^1.png>] [16] [17] [18] [19] [20]
+<pictures/variational/freq_char/3dcont.png, id=136, 578.16pt x 578.16pt>
 File: pictures/variational/freq_char/3dcont.png Graphic file (type png)
 
 <use pictures/variational/freq_char/3dcont.png>
 Package pdftex.def Info: pictures/variational/freq_char/3dcont.png used on inpu
-t line 703.
+t line 675.
 (pdftex.def)             Requested size: 410.2334pt x 410.23181pt.
 
-<pictures/variational/freq_char/2dcont.png, id=138, 433.62pt x 289.08pt>
+<pictures/variational/freq_char/2dcont.png, id=137, 433.62pt x 289.08pt>
 File: pictures/variational/freq_char/2dcont.png Graphic file (type png)
 
 <use pictures/variational/freq_char/2dcont.png>
 Package pdftex.def Info: pictures/variational/freq_char/2dcont.png used on inpu
-t line 708.
+t line 680.
 (pdftex.def)             Requested size: 307.677pt x 205.12914pt.
- [21] [22 <./pictures/variational/freq_char/3dcont.png> <./pictures/variational
-/freq_char/2dcont.png>]
-<pictures/variational/freq_char/3dpiece.png, id=147, 578.16pt x 578.16pt>
+ [21]
+<pictures/variational/freq_char/2dcont4vars.png, id=141, 433.62pt x 289.08pt>
+File: pictures/variational/freq_char/2dcont4vars.png Graphic file (type png)
+
+<use pictures/variational/freq_char/2dcont4vars.png>
+Package pdftex.def Info: pictures/variational/freq_char/2dcont4vars.png used on
+ input line 687.
+(pdftex.def)             Requested size: 307.677pt x 205.12914pt.
+ [22 <./pictures/variational/freq_char/3dcont.png> <./pictures/variational/freq
+_char/2dcont.png>] [23 <./pictures/variational/freq_char/2dcont4vars.png>]
+<pictures/variational/freq_char/3dpiece.png, id=151, 578.16pt x 578.16pt>
 File: pictures/variational/freq_char/3dpiece.png Graphic file (type png)
 
 <use pictures/variational/freq_char/3dpiece.png>
 Package pdftex.def Info: pictures/variational/freq_char/3dpiece.png used on inp
-ut line 732.
+ut line 734.
 (pdftex.def)             Requested size: 410.2334pt x 410.23181pt.
 
-<pictures/variational/freq_char/2dpiece.png, id=148, 433.62pt x 289.08pt>
+<pictures/variational/freq_char/2dpiece.png, id=152, 433.62pt x 289.08pt>
 File: pictures/variational/freq_char/2dpiece.png Graphic file (type png)
 
 <use pictures/variational/freq_char/2dpiece.png>
 Package pdftex.def Info: pictures/variational/freq_char/2dpiece.png used on inp
-ut line 737.
+ut line 739.
 (pdftex.def)             Requested size: 256.3949pt x 170.93947pt.
- [23]
-<pictures/variational/freq_char/2cases.png, id=152, 433.62pt x 289.08pt>
-File: pictures/variational/freq_char/2cases.png Graphic file (type png)
+ [24]
+<pictures/variational/freq_char/2dpiece4vars.png, id=157, 433.62pt x 289.08pt>
+File: pictures/variational/freq_char/2dpiece4vars.png Graphic file (type png)
 
-<use pictures/variational/freq_char/2cases.png>
-Package pdftex.def Info: pictures/variational/freq_char/2cases.png used on inpu
-t line 742.
-(pdftex.def)             Requested size: 205.1128pt x 136.74098pt.
- [24 <./pictures/variational/freq_char/3dpiece.png> <./pictures/variational/fre
+<use pictures/variational/freq_char/2dpiece4vars.png>
+Package pdftex.def Info: pictures/variational/freq_char/2dpiece4vars.png used o
+n input line 746.
+(pdftex.def)             Requested size: 307.677pt x 205.12914pt.
+ [25 <./pictures/variational/freq_char/3dpiece.png> <./pictures/variational/fre
 q_char/2dpiece.png>]
-<pictures/variational/polys/z_3^-1.png, id=159, 1084.05pt x 361.35pt>
+<pictures/variational/polys/z_3^-1.png, id=163, 1084.05pt x 361.35pt>
 File: pictures/variational/polys/z_3^-1.png Graphic file (type png)
 
 <use pictures/variational/polys/z_3^-1.png>
 Package pdftex.def Info: pictures/variational/polys/z_3^-1.png used on input li
-ne 752.
+ne 756.
 (pdftex.def)             Requested size: 512.78981pt x 170.93727pt.
 
-<pictures/variational/polys/z_3^3.png, id=160, 1084.05pt x 361.35pt>
+<pictures/variational/polys/z_3^3.png, id=164, 1084.05pt x 361.35pt>
 File: pictures/variational/polys/z_3^3.png Graphic file (type png)
 
 <use pictures/variational/polys/z_3^3.png>
 Package pdftex.def Info: pictures/variational/polys/z_3^3.png used on input lin
-e 756.
+e 760.
 (pdftex.def)             Requested size: 512.78981pt x 170.93727pt.
 
-<pictures/variational/polys/z_2^-2.png, id=161, 1084.05pt x 361.35pt>
+<pictures/variational/polys/z_2^-2.png, id=165, 1084.05pt x 361.35pt>
 File: pictures/variational/polys/z_2^-2.png Graphic file (type png)
 
 <use pictures/variational/polys/z_2^-2.png>
 Package pdftex.def Info: pictures/variational/polys/z_2^-2.png used on input li
-ne 760.
+ne 764.
 (pdftex.def)             Requested size: 512.78981pt x 170.93727pt.
- [25 <./pictures/variational/freq_char/2cases.png> <./pictures/variational/poly
-s/z_3^-1.png>]
-<pictures/variational/polys/z_3^-1_v2.png, id=167, 1084.05pt x 361.35pt>
+ [26 <./pictures/variational/freq_char/2dpiece4vars.png> <./pictures/variationa
+l/polys/z_3^-1.png>]
+<pictures/variational/polys/z_3^-1_v2.png, id=171, 1084.05pt x 361.35pt>
 File: pictures/variational/polys/z_3^-1_v2.png Graphic file (type png)
 
 <use pictures/variational/polys/z_3^-1_v2.png>
 Package pdftex.def Info: pictures/variational/polys/z_3^-1_v2.png used on input
- line 766.
+ line 770.
 (pdftex.def)             Requested size: 512.78981pt x 170.93727pt.
 
-<pictures/variational/polys/z_3^3_v2.png, id=168, 1084.05pt x 361.35pt>
+<pictures/variational/polys/z_3^3_v2.png, id=172, 1084.05pt x 361.35pt>
 File: pictures/variational/polys/z_3^3_v2.png Graphic file (type png)
 
 <use pictures/variational/polys/z_3^3_v2.png>
 Package pdftex.def Info: pictures/variational/polys/z_3^3_v2.png used on input 
-line 771.
+line 775.
 (pdftex.def)             Requested size: 512.78981pt x 170.93727pt.
- [26 <./pictures/variational/polys/z_3^3.png> <./pictures/variational/polys/z_2
+ [27 <./pictures/variational/polys/z_3^3.png> <./pictures/variational/polys/z_2
 ^-2.png> <./pictures/variational/polys/z_3^-1_v2.png>]
-<pictures/variational/polys/z_2^-2_v2.png, id=175, 1084.05pt x 361.35pt>
+<pictures/variational/polys/z_2^-2_v2.png, id=179, 1084.05pt x 361.35pt>
 File: pictures/variational/polys/z_2^-2_v2.png Graphic file (type png)
 
 <use pictures/variational/polys/z_2^-2_v2.png>
 Package pdftex.def Info: pictures/variational/polys/z_2^-2_v2.png used on input
- line 776.
+ line 780.
 (pdftex.def)             Requested size: 512.78981pt x 170.93727pt.
- [27 <./pictures/variational/polys/z_3^3_v2.png> <./pictures/variational/polys/
-z_2^-2_v2.png>] [28]
-(./course.bbl) [29] (./course.aux) ) 
+ [28 <./pictures/variational/polys/z_3^3_v2.png> <./pictures/variational/polys/
+z_2^-2_v2.png>] [29]
+(./course.bbl) [30] (./course.aux)
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
 Here is how much of TeX's memory you used:
- 5562 strings out of 493029
- 76643 string characters out of 6136233
- 159631 words of memory out of 5000000
- 8934 multiletter control sequences out of 15000+600000
+ 5586 strings out of 493029
+ 77209 string characters out of 6136233
+ 156678 words of memory out of 5000000
+ 8954 multiletter control sequences out of 15000+600000
  21632 words of font info for 61 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  38i,13n,26p,1932b,663s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/cm-super/
-cm-super-t2a.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/
-cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12
-.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></
-usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/sha
-re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texl
-ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/ty
-pe1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
-blic/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
-sfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
-symbols/msbm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/rsfs/rsfs1
-0.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/te
-xmf/fonts/type1/public/cm-super/sfbx1440.pfb></usr/share/texmf/fonts/type1/publ
-ic/cm-super/sfbx1728.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx2074
-.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfcc1200.pfb></usr/share/tex
-mf/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf/fonts/type1/publi
-c/cm-super/sfrm1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1728.
-pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti1200.pfb>
-Output written on course.pdf (30 pages, 2061253 bytes).
+{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t2a.enc}</usr/share/texli
+ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr
+8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/s
+hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/te
+xlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/tex
+live/texmf-dist/fonts/type1/public/rsfs/rsfs10.pfb></usr/share/texmf/fonts/type
+1/public/cm-super/sfbx1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sf
+bx1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1728.pfb></usr/sha
+re/texmf/fonts/type1/public/cm-super/sfbx2074.pfb></usr/share/texmf/fonts/type1
+/public/cm-super/sfcc1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfr
+m1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1440.pfb></usr/shar
+e/texmf/fonts/type1/public/cm-super/sfrm1728.pfb></usr/share/texmf/fonts/type1/
+public/cm-super/sfti1200.pfb>
+Output written on course.pdf (31 pages, 1969818 bytes).
 PDF statistics:
- 258 PDF objects out of 1000 (max. 8388607)
- 153 compressed objects within 2 object streams
+ 263 PDF objects out of 1000 (max. 8388607)
+ 155 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 121 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 126 words of extra memory for PDF output out of 10000 (max. 10000000)
 

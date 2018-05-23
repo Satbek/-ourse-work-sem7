@@ -3,58 +3,44 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: course.aux
 The style file: unsrt.bst
 Database file #1: bibl.bib
-Warning--I didn't find a database entry for "variational_base"
-Name 1 in "Peter J. Hampton, Student Member, IEEE, Pan Agathoklis, Senior Member, IEEE, and Colin Bradley" has a comma at the end for entry new_method1
-while executing---line 944 of file unsrt.bst
-Too many commas in name 1 of "Peter J. Hampton, Student Member, IEEE, Pan Agathoklis, Senior Member, IEEE, and Colin Bradley" for entry new_method1
-while executing---line 944 of file unsrt.bst
-Too many commas in name 1 of "Peter J. Hampton, Student Member, IEEE, Pan Agathoklis, Senior Member, IEEE, and Colin Bradley" for entry new_method1
-while executing---line 944 of file unsrt.bst
-Too many commas in name 1 of "Peter J. Hampton, Student Member, IEEE, Pan Agathoklis, Senior Member, IEEE, and Colin Bradley" for entry new_method1
-while executing---line 944 of file unsrt.bst
-Too many commas in name 1 of "А. В. Разгулин, Е. Ж. Кужамалиев, А. С. Гончаров, А. В. Ларичев" for entry vatiational_base
-while executing---line 944 of file unsrt.bst
-Name 1 in "L. A. Poyneer, D. T. Gavel, and J. M. Brase" has a comma at the end for entry how
-while executing---line 944 of file unsrt.bst
-You've used 5 entries,
+You've used 7 entries,
             1791 wiz_defined-function locations,
-            479 strings with 4636 characters,
-and the built_in function-call counts, 1054 in all, are:
-= -- 96
-> -- 28
+            493 strings with 4879 characters,
+and the built_in function-call counts, 1671 in all, are:
+= -- 140
+> -- 72
 < -- 1
-+ -- 12
-- -- 7
-* -- 58
-:= -- 167
-add.period$ -- 15
-call.type$ -- 5
-change.case$ -- 4
++ -- 27
+- -- 20
+* -- 118
+:= -- 269
+add.period$ -- 21
+call.type$ -- 7
+change.case$ -- 5
 chr.to.int$ -- 0
-cite$ -- 5
-duplicate$ -- 54
-empty$ -- 110
-format.name$ -- 7
-if$ -- 242
+cite$ -- 7
+duplicate$ -- 74
+empty$ -- 165
+format.name$ -- 20
+if$ -- 371
 int.to.chr$ -- 0
-int.to.str$ -- 5
-missing$ -- 6
-newline$ -- 28
-num.names$ -- 5
-pop$ -- 15
+int.to.str$ -- 7
+missing$ -- 9
+newline$ -- 38
+num.names$ -- 7
+pop$ -- 22
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 28
+skip$ -- 31
 stack$ -- 0
-substring$ -- 70
-swap$ -- 14
+substring$ -- 124
+swap$ -- 16
 text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 0
-while$ -- 9
-width$ -- 6
-write$ -- 55
-(There were 6 error messages)
+while$ -- 13
+width$ -- 8
+write$ -- 77

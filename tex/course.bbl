@@ -1,37 +1,48 @@
 \begin{thebibliography}{1}
 
+\bibitem{Tyson}
+R.~K. Tyson.
+\newblock {\em Introduction to Adaptive Optics. Bellingham}.
+\newblock WA: SPIE Press, 2000.
+
+\bibitem{pseudo_inv1}
+B.~L. Ellerbroek.
+\newblock Efficient computation of minimum-variance wave- front reconstructors
+  with sparse matrix techniques.
+\newblock {\em J. Opt. Soc. Amer. A}, 19:1803,1816, Sep 2002.
+
+\bibitem{fourier_1}
+L.~A. Poyneer, D.~T. Gavel, , and J.~M. Brase.
+\newblock Fast wavefront reconstruction in large adaptive optics systems with
+  the fourier transform.
+\newblock {\em J. Opt. Soc. Amer. A}, 18:2100,2111, Oct 2002.
+
 \bibitem{new_method1}
-IEEE Pan Agathoklis Senior Member~IEEE Peter J.~Hampton, Student~Member and
-  Colin Bradley.
+Peter~J. Hampton, Student Member, Pan Agathoklis, Senior Member, and Colin
+  Bradley.
 \newblock A new wave-front reconstruction method for adaptive optics systems
   using wavelets.
 \newblock {\em IEEE JOURNAL OF SELECTED TOPICS IN SIGNAL PROCESSING},
-  2(5):781--792, 10 2008.
+  2(5):781,792, 10 2008.
 
 \bibitem{new_method2}
-Panajotis~Agathoklis Ioana S.~Sevcenco, Peter J.~Hampton.
+Ioana~S. Sevcenco, Peter~J. Hampton, and Panajotis Agathoklis.
 \newblock A wavelet based method for image reconstruction from gradient data
   with applications.
-\newblock {\em Springer Science+Business Media New York}, pages 717--737, 9
+\newblock {\em Springer Science+Business Media New York}, pages 717,737, 9
   2013.
 
 \bibitem{vatiational_base}
-А. С. Гончаров А. В.~Ларичев А. В.~Разгулин, Е.
-  Ж.~Кужамалиев.
+А.~В. Разгулин, Е.~Ж. Кужамалиев, А.~С.
+  Гончаров, and А.~В. Ларичев.
 \newblock Вариационный метод восстановления
   волнового фронта по измерениям датчика
   Шака-Гартмана.
 \newblock {\em Оптика атмосферы и океана}, 30:104,108,
   2017.
 
-\bibitem{how}
-D.~T.~Gavel L.~A.~Poyneer and J.~M. Brase.
-\newblock Fast wavefront recon- struction in large adaptive optics systems with
-  the fourier transform.
-\newblock {\em J. Opt. Soc. Amer. A}, 2002.
-
 \bibitem{marchuck}
-Агошков~В.И. Марчук Г.~И.
+Марчук~Г. И. and Агошков В.И.
 \newblock {\em Введение в проекционно-сеточные
   методы.}
 \newblock М.: Наука, 1981.
