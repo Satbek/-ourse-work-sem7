@@ -1,12 +1,29 @@
 \documentclass[11pt]{beamer}
 \usetheme{Warsaw}
 \usepackage[utf8]{inputenc}
+
+\defbeamertemplate*{footline}{Warsaw} {%
+\leavevmode%
+\hbox{%
+\begin{beamercolorbox}[wd=.5\paperwidth,ht=2.5ex,dp=1.125ex,leftskip=.3cm,rightskip=.3cm]{author in head/foot}%
+\insertframenumber{}%
+\hfill\insertshortauthor
+\end{beamercolorbox}%
+\begin{beamercolorbox}[wd=.5\paperwidth,ht=2.5ex,dp=1.125ex,leftskip=.3cm,rightskip=.3cm]{title in head/foot}%
+\usebeamerfont{title in head/foot}\insertshorttitle
+\end{beamercolorbox}
+}%
+\vskip0pt%
+}
 \usepackage[russian]{babel}
 \usepackage[T2A]{fontenc}
 \usepackage{amsmath}
 \usepackage{amsfonts}
 \usepackage{amssymb}
 \usepackage{graphicx}
+\usepackage{algpseudocode}
+\usepackage{ mathrsfs }
+\usepackage{amsmath}
 \author{Турганбаев Сатбек Амангельдыулы}
 \title{Исследование метода восстановления волнового фронта по его наклонам\\ на основе вейвлетов Хаара}
 
@@ -14,12 +31,12 @@
 %\setbeamertemplate{navigation symbols}{} 
 %\logo{} 
 \institute{Московский Государственный Университет имени М.В.Ломоносова \\
+Казахстанский Филиал\\
 Факультет вычислительной математики и кибернетики \\
-Кафедра математической физики \\
 \vspace{\baselineskip}
 Выпускная квалификационная работа бакалавра \\
 \vspace{\baselineskip}
-Научный руководитель: д.т.н., профессор Разгулин А.В.} 
+Научный руководитель: д.ф-м.н., профессор Разгулин А.В.} 
 \date{2018г.} 
 
 
@@ -55,7 +72,7 @@ $$
 Матрицы $U,\, g_1,\, g_2$ являются дискретными представлениями функций $u(x,y) ,\, u_x(x,y) ,\, u_y(x,y)$ на сетке $\omega_h$.
 
 \begin{block}{Задача восстановления  волнового фронта}
-Задача восстановления волнового фронта состоит в приближенном восстановлении  матрицы матрицы $U$, по известным наклонам $g_1,\, g_2$.
+Задача восстановления волнового фронта состоит в приближенном восстановлении  матрицы $U$, по известным наклонам $g_1,\, g_2$.
 \end{block}
 \end{frame}
 
@@ -67,7 +84,7 @@ $$
 \item Точные значения производных:\\$g_1 = u_x(x_i,y_j);\; g_2 = u_y(x_i,y_j)$
 \item Первые разностные производные:\\
 $g_1= \frac{u(x_i,y_j) - u(x_{i-1},y_j)}{h_1};\;g_2= \frac{u(x_i,y_j) - u(x_i,y_{j-1})}{h_2}$
-\item Случай восстановления по средним локальным апертурам значений наклонов:\\$
+\item Средние локальные апертуры значений наклонов:\\$
 g_1 = \frac{1}{h_1h_2} \sum \limits_{n=1}^{N_1 - 1} \sum \limits_{m=1}^{N_2 - 1} \int \limits _{\Delta_{nm}} u_\xi(\xi,\eta) d\xi d\eta\overset{\circ}{\varphi}_{nm}(x,y)
 $\\
 $
@@ -91,8 +108,10 @@ g_2 = \frac{1}{h_1h_2} \sum \limits_{n=1}^{N_1 - 1} \sum \limits_{m=1}^{N_2 - 1}
 \begin{column}{0.5\textwidth}
 $$g_1= \frac{u(x_i,y_j) - u(x_{i-1},y_j)}{h_1}$$
 $$g_2= \frac{u(x_i,y_j) - u(x_i,y_{j-1})}{h_2}$$
+
 \end{column}
 \end{columns}
+\tiny Peter J. Hampton, Student Member, Pan Agathoklis, Senior Member, and Colin Bradley. A new wave-front reconstruction method for adaptive optics systems using wavelets.
 \end{frame}
 
 \begin{frame}
@@ -113,7 +132,7 @@ $$g_2= \frac{u(x_i,y_j) - u(x_i,y_{j-1})}{h_2}$$
 \frametitle{Вариационный метод}
 
 \begin{block}{Минимизация функционала невязки}
-$J(u) = \int \limits_0^{2\pi} \int \limits_0^{2\pi} ((u_x - g_1)^2 + (u_y-g_2)^2 + \alpha u^2 )dxdy \rightarrow min$
+$J(u) = \int \limits_0^{2\pi} \int \limits_0^{2\pi} ((u_x - g_1)^2 + (u_y-g_2)^2 + \alpha u^2 )dxdy \rightarrow min$ \\$ \forall u \in W_{2\pi}^{1}(\Omega),\, \alpha > 0,\,\Omega = [0,\,2\pi]  \times [0,\,2\pi]$
 \end{block}
 \begin{block}{Необходимое условие минимума функционала в форме интегрального тождества}
 $(u_x, \phi_x) + (u_y,\phi_y) + \alpha(u, \phi) = (g_1, \phi_x) + (g_2, \phi_y)$\\$\forall\phi \in W_{2\pi}^{1}(\Omega),\;(\cdot\,,\cdot)$ - скалярное произведение в $L_2(\Omega)$
@@ -121,7 +140,7 @@ $(u_x, \phi_x) + (u_y,\phi_y) + \alpha(u, \phi) = (g_1, \phi_x) + (g_2, \phi_y)$
 \end{frame}
 
 \begin{frame}{Проекционно-разностная схема}
-Определим на $\Omega$ систему финитных базисных функций $\{\phi_i(x)\} ,\, i \in [0,\,N-1]$.
+Определим на $\Omega$ систему финитных базисных функций $\{\phi_i(x)\} ,\, i \in [0,\,N-1].W_h = \mathscr{L}\{\phi_i(x)\phi_j(y)\}_{i,j=0}^{N_1 - 1,N_2-1} \in W_{2\pi}^{1}(\Omega)$.
 $$
 \phi_i(x) = 
  \begin{cases}
@@ -141,7 +160,7 @@ $$
 \end{block}
 \begin{block}{Проекционно-разностная схема}
 $$B_2 \Lambda_1 u + B_1 \Lambda_2 u + \alpha B_1 B_2 u + \gamma\Lambda_1\Lambda_2u = F(g_1,g_2)$$
-$F(g_1,\,g_2)$ - правая часть, зависит от представления наклонов волнового фронта\\
+$F(g_1,\,g_2)$ - правая часть, зависит от представления наклонов волнового фронта,\,
 $\gamma$ - дополнительный регуляризатор
 \end{block}
 
@@ -186,7 +205,7 @@ $$
 
 
 \begin{block}{Решение разностной схемы методом Фурье}
-$u_{kl} = \frac{f_{kl}}{\mu_l \lambda_k + \mu_k \lambda_l + \alpha \mu_k \mu_l + \gamma \lambda_k \lambda_l}$
+$u_{kl} = \frac{f_{kl}}{\mu_l \lambda_k + \mu_k \lambda_l + \alpha \mu_k \mu_l + \gamma \lambda_k \lambda_l}$,\,
 $f_{kl}$ - Фурье образ правой части
 \end{block}
 \end{frame}
@@ -205,10 +224,11 @@ $f_{kl}$ - Фурье образ правой части
 $$v(x,y) = e^{ikx}e^{ily}, k \neq 0, l \neq 0$$
 $$g_1 = v_x =ixe^{ikx}e^{ily}$$
 $$ g_2 = v_y = ile^{ikx}e^{ily}$$
+\center{\includegraphics[width=0.8\linewidth]{2dcont4vars.png}}
 \end{column}
 
 \end{columns}
-\begin{block}{Частотная характеристика при точных значением производных}
+\begin{block}{Частотная характеристика при точных значениях производных}
 $$
 H_{kl} = \frac{1}{u_{kl}} = \frac{(\frac{1}{k^2} + \frac{1}{l^2})\lambda_k\lambda_l}{\mu_l \lambda_k + \mu_k \lambda_l + \alpha \mu_k \mu_l + \gamma \lambda_k \lambda_l}
 $$
@@ -218,7 +238,7 @@ $$
 
 \begin{frame}
 \frametitle{Частотные характеристики}
-\framesubtitle{Случай точных значений производных}
+\framesubtitle{Случай восстановления по средним локальным апертурам значений наклонов}
 \begin{columns}
 \begin{column}{0.4\linewidth}
 \begin{figure}[H]
@@ -234,7 +254,7 @@ $$(g_2, \phi_y) = \frac{4}{\omega_k h^2}  \sin^2\frac{\omega_l}{2}  \sin\,\omega
 \end{columns}
 \begin{block}{Частотная характеристика в случае восстановления по средним локальным апертурам значений наклонов}
 $$
-H_{kl} = \frac{1}{u_{kl}} = \frac{\frac{\lambda_k \sin(lh_2)}{lh_1} + \frac{\lambda_l \sin(kh_1)}{kh_1}}{\mu_l \lambda_k + \mu_k \lambda_l + \alpha \mu_k \mu_l + \gamma \lambda_k \lambda_l}
+H_{kl} = \frac{1}{u_{kl}} = \frac{\frac{\lambda_k \sin(lh_2)}{lh_2} + \frac{\lambda_l \sin(kh_1)}{kh_1}}{\mu_l \lambda_k + \mu_k \lambda_l + \alpha \mu_k \mu_l + \gamma \lambda_k \lambda_l}
 $$
 \end{block}
 \end{frame}
@@ -245,7 +265,7 @@ $$
 Точные значения производных:
 \includegraphics[width=1\linewidth]{z_2^-2.png}
 \\
-Случай восстановления по средним локальным апертурам значений наклонов:
+Средние локальные апертуры значений наклонов:
 \includegraphics[width=1\linewidth]{z_2^-2_v2.png}
 
 
@@ -257,6 +277,10 @@ $$
 \item Проведены вычислительные эксперименты, подтверждающие работоспособность методов
 \item Удалось установить, что вейвлет метод идеален для случая первых разностных производных, но имеет существенную погрешность в остальных случаях, а вариационный метод имеет стабильные результаты для различных способов задания наклонов волнового фронта
 \end{enumerate}
+\end{frame}
+
+\begin{frame}
+\center{\Huge\textbf{Спасибо за внимание!}}
 \end{frame}
 
 \end{document}
